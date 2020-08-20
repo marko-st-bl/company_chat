@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-10-01T14:07:23</date>
+  <millis>1569931643794</millis>
+  <sequence>2</sequence>
+  <logger>service.FileService</logger>
+  <level>CONFIG</level>
+  <class>service.FileService</class>
+  <method>downloadFile</method>
+  <thread>15</thread>
+  <message>File succesufuly downloaded.</message>
+</record>
+</log>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-10-01T14:06:07</date>
+  <millis>1569931567139</millis>
+  <sequence>1</sequence>
+  <logger>view.LoginDialog</logger>
+  <level>CONFIG</level>
+  <class>view.LoginDialog$2</class>
+  <method>actionPerformed</method>
+  <thread>15</thread>
+  <message>User: 3 connected.</message>
+</record>
+</log>

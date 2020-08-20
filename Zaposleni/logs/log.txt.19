@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-10-01T14:08:22</date>
+  <millis>1569931702606</millis>
+  <sequence>3</sequence>
+  <logger>service.NotificationListener</logger>
+  <level>CONFIG</level>
+  <class>service.NotificationListener</class>
+  <method>run</method>
+  <thread>22</thread>
+  <message>Notification received: </message>
+</record>
+<record>
+  <date>2019-10-01T14:08:22</date>
+  <millis>1569931702619</millis>
+  <sequence>4</sequence>
+  <logger>service.NotificationListener</logger>
+  <level>CONFIG</level>
+  <class>service.NotificationListener</class>
+  <method>run</method>
+  <thread>22</thread>
+  <message>Notification: Poruka is displayed.</message>
+</record>
+<record>
+  <date>2019-10-01T14:08:23</date>
+  <millis>1569931703499</millis>
+  <sequence>6</sequence>
+  <logger>service.NotificationListener</logger>
+  <level>CONFIG</level>
+  <class>service.NotificationListener</class>
+  <method>run</method>
+  <thread>22</thread>
+  <message>Notification: Poruka is serialized.</message>
+</record>
+</log>

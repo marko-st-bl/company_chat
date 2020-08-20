@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-06-02T22:38:03</date>
+  <millis>1559507883641</millis>
+  <sequence>0</sequence>
+  <logger>server.FileTransferServer</logger>
+  <level>CONFIG</level>
+  <class>server.FileTransferServer</class>
+  <method>loadProperties</method>
+  <thread>1</thread>
+  <message>Properties loaded.</message>
+</record>
+<record>
+  <date>2019-06-02T22:38:05</date>
+  <millis>1559507885026</millis>
+  <sequence>1</sequence>
+  <logger>server.FileTransferServer</logger>
+  <level>SEVERE</level>
+  <class>server.FileTransferServer</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Error occured on RMI Server</message>
+  <exception>
+    <message>java.rmi.ConnectException: Connection refused to host: 192.168.56.1; nested exception is: 
+	java.net.ConnectException: Connection refused: connect</message>
+    <frame>
+      <class>sun.rmi.transport.tcp.TCPEndpoint</class>
+      <method>newSocket</method>
+    </frame>
+    <frame>
+      <class>sun.rmi.transport.tcp.TCPChannel</class>
+      <method>createConnection</method>
+    </frame>
+    <frame>
+      <class>sun.rmi.transport.tcp.TCPChannel</class>
+      <method>newConnection</method>
+    </frame>
+    <frame>
+      <class>sun.rmi.server.UnicastRef</class>
+      <method>newCall</method>
+    </frame>
+    <frame>
+      <class>sun.rmi.registry.RegistryImpl_Stub</class>
+      <method>rebind</method>
+    </frame>
+    <frame>
+      <class>server.FileTransferServer</class>
+      <method>main</method>
+      <line>63</line>
+    </frame>
+  </exception>
+</record>

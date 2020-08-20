@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-10-01T14:09:17</date>
+  <millis>1569931757424</millis>
+  <sequence>7</sequence>
+  <logger>service.StreamUtil</logger>
+  <level>CONFIG</level>
+  <class>service.StreamUtil</class>
+  <method>run</method>
+  <thread>58</thread>
+  <message>Starting stream...</message>
+</record>
+<record>
+  <date>2019-10-01T14:09:37</date>
+  <millis>1569931777248</millis>
+  <sequence>8</sequence>
+  <logger>service.StreamUtil</logger>
+  <level>CONFIG</level>
+  <class>service.StreamUtil</class>
+  <method>run</method>
+  <thread>58</thread>
+  <message>Stream stopped.</message>
+</record>
+</log>

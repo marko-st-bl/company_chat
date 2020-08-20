@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-06-08T15:01:26</date>
+  <millis>1559998886105</millis>
+  <sequence>0</sequence>
+  <logger>com.marko.util.JedisConnectionUtil</logger>
+  <level>CONFIG</level>
+  <class>com.marko.util.JedisConnectionUtil</class>
+  <method>connect</method>
+  <thread>1</thread>
+  <message>Connection to REDIS server succesful.</message>
+</record>
+</log>

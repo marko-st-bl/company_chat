@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-06-03T12:56:24</date>
+  <millis>1559559384134</millis>
+  <sequence>0</sequence>
+  <logger>server.FileTransferServer</logger>
+  <level>CONFIG</level>
+  <class>server.FileTransferServer</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>FileTransferServer is running</message>
+</record>
+<record>
+  <date>2019-06-03T12:56:40</date>
+  <millis>1559559400066</millis>
+  <sequence>1</sequence>
+  <logger>server.FileTransferServer</logger>
+  <level>CONFIG</level>
+  <class>server.FileTransferServer</class>
+  <method>loadProperties</method>
+  <thread>18</thread>
+  <message>Config file loaded.</message>
+</record>
+<record>
+  <date>2019-06-03T12:56:42</date>
+  <millis>1559559402116</millis>
+  <sequence>2</sequence>
+  <logger>server.FileTransferServer</logger>
+  <level>CONFIG</level>
+  <class>server.FileTransferServer</class>
+  <method>loadProperties</method>
+  <thread>18</thread>
+  <message>Config file loaded.</message>
+</record>
+<record>
+  <date>2019-06-03T12:56:44</date>
+  <millis>1559559404121</millis>
+  <sequence>3</sequence>
+  <logger>server.FileTransferServer</logger>
+  <level>CONFIG</level>
+  <class>server.FileTransferServer</class>
+  <method>loadProperties</method>
+  <thread>18</thread>
+  <message>Config file loaded.</message>
+</record>
+<record>
+  <date>2019-06-03T12:56:46</date>
+  <millis>1559559406126</millis>
+  <sequence>4</sequence>
+  <logger>server.FileTransferServer</logger>
+  <level>CONFIG</level>
+  <class>server.FileTransferServer</class>
+  <method>loadProperties</method>
+  <thread>18</thread>
+  <message>Config file loaded.</message>
+</record>
+<record>
+  <date>2019-06-03T12:56:48</date>
+  <millis>1559559408131</millis>
+  <sequence>5</sequence>
+  <logger>server.FileTransferServer</logger>
+  <level>CONFIG</level>
+  <class>server.FileTransferServer</class>
+  <method>loadProperties</method>
+  <thread>18</thread>
+  <message>Config file loaded.</message>
+</record>
+<record>
+  <date>2019-06-03T12:56:50</date>
+  <millis>1559559410135</millis>
+  <sequence>6</sequence>
+  <logger>server.FileTransferServer</logger>
+  <level>CONFIG</level>
+  <class>server.FileTransferServer</class>
+  <method>loadProperties</method>
+  <thread>18</thread>
+  <message>Config file loaded.</message>
+</record>
+<record>
+  <date>2019-06-03T12:56:52</date>
+  <millis>1559559412139</millis>
+  <sequence>7</sequence>
+  <logger>server.FileTransferServer</logger>
+  <level>CONFIG</level>
+  <class>server.FileTransferServer</class>
+  <method>loadProperties</method>
+  <thread>18</thread>
+  <message>Config file loaded.</message>
+</record>
+<record>
+  <date>2019-06-03T12:56:54</date>
+  <millis>1559559414144</millis>
+  <sequence>8</sequence>
+  <logger>server.FileTransferServer</logger>
+  <level>CONFIG</level>
+  <class>server.FileTransferServer</class>
+  <method>loadProperties</method>
+  <thread>18</thread>
+  <message>Config file loaded.</message>
+</record>
+<record>
+  <date>2019-06-03T12:56:56</date>
+  <millis>1559559416149</millis>
+  <sequence>9</sequence>
+  <logger>server.FileTransferServer</logger>
+  <level>CONFIG</level>
+  <class>server.FileTransferServer</class>
+  <method>loadProperties</method>
+  <thread>18</thread>
+  <message>Config file loaded.</message>
+</record>
+<record>
+  <date>2019-06-03T12:56:58</date>
+  <millis>1559559418157</millis>
+  <sequence>10</sequence>
+  <logger>server.FileTransferServer</logger>
+  <level>CONFIG</level>
+  <class>server.FileTransferServer</class>
+  <method>loadProperties</method>
+  <thread>18</thread>
+  <message>Config file loaded.</message>
+</record>
+<record>
+  <date>2019-06-03T12:57:00</date>
+  <millis>1559559420161</millis>
+  <sequence>11</sequence>
+  <logger>server.FileTransferServer</logger>
+  <level>CONFIG</level>
+  <class>server.FileTransferServer</class>
+  <method>loadProperties</method>
+  <thread>18</thread>
+  <message>Config file loaded.</message>
+</record>
+<record>
+  <date>2019-06-03T12:57:02</date>
+  <millis>1559559422165</millis>
+  <sequence>12</sequence>
+  <logger>server.FileTransferServer</logger>
+  <level>CONFIG</level>
+  <class>server.FileTransferServer</class>
+  <method>loadProperties</method>
+  <thread>18</thread>
+  <message>Config file loaded.</message>
+</record>
+<record>
+  <date>2019-06-03T12:57:04</date>
+  <millis>1559559424183</millis>
+  <sequence>13</sequence>
+  <logger>server.FileTransferServer</logger>
+  <level>CONFIG</level>
+  <class>server.FileTransferServer</class>
+  <method>loadProperties</method>
+  <thread>19</thread>
+  <message>Config file loaded.</message>
+</record>
+<record>
+  <date>2019-06-03T12:57:06</date>
+  <millis>1559559426188</millis>
+  <sequence>14</sequence>
+  <logger>server.FileTransferServer</logger>
+  <level>CONFIG</level>
+  <class>server.FileTransferServer</class>
+  <method>loadProperties</method>
+  <thread>18</thread>
+  <message>Config file loaded.</message>
+</record>
+<record>
+  <date>2019-06-03T12:57:08</date>
+  <millis>1559559428192</millis>
+  <sequence>15</sequence>
+  <logger>server.FileTransferServer</logger>
+  <level>CONFIG</level>
+  <class>server.FileTransferServer</class>
+  <method>loadProperties</method>
+  <thread>18</thread>
+  <message>Config file loaded.</message>
+</record>
+<record>
+  <date>2019-06-03T12:57:10</date>
+  <millis>1559559430200</millis>
+  <sequence>16</sequence>
+  <logger>server.FileTransferServer</logger>
+  <level>CONFIG</level>
+  <class>server.FileTransferServer</class>
+  <method>loadProperties</method>
+  <thread>18</thread>
+  <message>Config file loaded.</message>
+</record>
+<record>
+  <date>2019-06-03T12:57:12</date>
+  <millis>1559559432208</millis>
+  <sequence>17</sequence>
+  <logger>server.FileTransferServer</logger>
+  <level>CONFIG</level>
+  <class>server.FileTransferServer</class>
+  <method>loadProperties</method>
+  <thread>18</thread>
+  <message>Config file loaded.</message>
+</record>
+<record>
+  <date>2019-06-03T12:57:14</date>
+  <millis>1559559434217</millis>
+  <sequence>18</sequence>
+  <logger>server.FileTransferServer</logger>
+  <level>CONFIG</level>
+  <class>server.FileTransferServer</class>
+  <method>loadProperties</method>
+  <thread>18</thread>
+  <message>Config file loaded.</message>
+</record>
+<record>
+  <date>2019-06-03T12:57:16</date>
+  <millis>1559559436221</millis>
+  <sequence>19</sequence>
+  <logger>server.FileTransferServer</logger>
+  <level>CONFIG</level>
+  <class>server.FileTransferServer</class>
+  <method>loadProperties</method>
+  <thread>18</thread>
+  <message>Config file loaded.</message>
+</record>
+<record>
+  <date>2019-06-03T12:57:18</date>
+  <millis>1559559438226</millis>
+  <sequence>20</sequence>
+  <logger>server.FileTransferServer</logger>
+  <level>CONFIG</level>
+  <class>server.FileTransferServer</class>
+  <method>loadProperties</method>
+  <thread>18</thread>
+  <message>Config file loaded.</message>
+</record>
+<record>
+  <date>2019-06-03T12:57:20</date>
+  <millis>1559559440231</millis>
+  <sequence>21</sequence>
+  <logger>server.FileTransferServer</logger>
+  <level>CONFIG</level>
+  <class>server.FileTransferServer</class>
+  <method>loadProperties</method>
+  <thread>18</thread>
+  <message>Config file loaded.</message>
+</record>
+<record>
+  <date>2019-06-03T12:57:22</date>
+  <millis>1559559442235</millis>
+  <sequence>22</sequence>
+  <logger>server.FileTransferServer</logger>
+  <level>CONFIG</level>
+  <class>server.FileTransferServer</class>
+  <method>loadProperties</method>
+  <thread>18</thread>
+  <message>Config file loaded.</message>
+</record>
+<record>
+  <date>2019-06-03T12:57:24</date>
+  <millis>1559559444239</millis>
+  <sequence>23</sequence>
+  <logger>server.FileTransferServer</logger>
+  <level>CONFIG</level>
+  <class>server.FileTransferServer</class>
+  <method>loadProperties</method>
+  <thread>18</thread>
+  <message>Config file loaded.</message>
+</record>
+<record>
+  <date>2019-06-03T12:57:26</date>
+  <millis>1559559446245</millis>
+  <sequence>24</sequence>
+  <logger>server.FileTransferServer</logger>
+  <level>CONFIG</level>
+  <class>server.FileTransferServer</class>
+  <method>loadProperties</method>
+  <thread>18</thread>
+  <message>Config file loaded.</message>
+</record>
+<record>
+  <date>2019-06-03T12:57:28</date>
+  <millis>1559559448253</millis>
+  <sequence>25</sequence>
+  <logger>server.FileTransferServer</logger>
+  <level>CONFIG</level>
+  <class>server.FileTransferServer</class>
+  <method>loadProperties</method>
+  <thread>18</thread>
+  <message>Config file loaded.</message>
+</record>
+<record>
+  <date>2019-06-03T12:57:30</date>
+  <millis>1559559450257</millis>
+  <sequence>26</sequence>
+  <logger>server.FileTransferServer</logger>
+  <level>CONFIG</level>
+  <class>server.FileTransferServer</class>
+  <method>loadProperties</method>
+  <thread>18</thread>
+  <message>Config file loaded.</message>
+</record>
+<record>
+  <date>2019-06-03T12:57:32</date>
+  <millis>1559559452262</millis>
+  <sequence>27</sequence>
+  <logger>server.FileTransferServer</logger>
+  <level>CONFIG</level>
+  <class>server.FileTransferServer</class>
+  <method>loadProperties</method>
+  <thread>18</thread>
+  <message>Config file loaded.</message>
+</record>
+<record>
+  <date>2019-06-03T12:57:34</date>
+  <millis>1559559454265</millis>
+  <sequence>28</sequence>
+  <logger>server.FileTransferServer</logger>
+  <level>CONFIG</level>
+  <class>server.FileTransferServer</class>
+  <method>loadProperties</method>
+  <thread>18</thread>
+  <message>Config file loaded.</message>
+</record>
+<record>
+  <date>2019-06-03T12:57:36</date>
+  <millis>1559559456268</millis>
+  <sequence>29</sequence>
+  <logger>server.FileTransferServer</logger>
+  <level>CONFIG</level>
+  <class>server.FileTransferServer</class>
+  <method>loadProperties</method>
+  <thread>18</thread>
+  <message>Config file loaded.</message>
+</record>
+<record>
+  <date>2019-06-03T12:57:38</date>
+  <millis>1559559458271</millis>
+  <sequence>30</sequence>
+  <logger>server.FileTransferServer</logger>
+  <level>CONFIG</level>
+  <class>server.FileTransferServer</class>
+  <method>loadProperties</method>
+  <thread>18</thread>
+  <message>Config file loaded.</message>
+</record>
+<record>
+  <date>2019-06-03T12:57:40</date>
+  <millis>1559559460279</millis>
+  <sequence>31</sequence>
+  <logger>server.FileTransferServer</logger>
+  <level>CONFIG</level>
+  <class>server.FileTransferServer</class>
+  <method>loadProperties</method>
+  <thread>18</thread>
+  <message>Config file loaded.</message>
+</record>
+<record>
+  <date>2019-06-03T12:57:42</date>
+  <millis>1559559462285</millis>
+  <sequence>32</sequence>
+  <logger>server.FileTransferServer</logger>
+  <level>CONFIG</level>
+  <class>server.FileTransferServer</class>
+  <method>loadProperties</method>
+  <thread>18</thread>
+  <message>Config file loaded.</message>
+</record>
+<record>
+  <date>2019-06-03T12:57:44</date>
+  <millis>1559559464289</millis>
+  <sequence>33</sequence>
+  <logger>server.FileTransferServer</logger>
+  <level>CONFIG</level>
+  <class>server.FileTransferServer</class>
+  <method>loadProperties</method>
+  <thread>18</thread>
+  <message>Config file loaded.</message>
+</record>
+<record>
+  <date>2019-06-03T12:57:46</date>
+  <millis>1559559466292</millis>
+  <sequence>34</sequence>
+  <logger>server.FileTransferServer</logger>
+  <level>CONFIG</level>
+  <class>server.FileTransferServer</class>
+  <method>loadProperties</method>
+  <thread>18</thread>
+  <message>Config file loaded.</message>
+</record>
+<record>
+  <date>2019-06-03T12:57:48</date>
+  <millis>1559559468296</millis>
+  <sequence>35</sequence>
+  <logger>server.FileTransferServer</logger>
+  <level>CONFIG</level>
+  <class>server.FileTransferServer</class>
+  <method>loadProperties</method>
+  <thread>18</thread>
+  <message>Config file loaded.</message>
+</record>

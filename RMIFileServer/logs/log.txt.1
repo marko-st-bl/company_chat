@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-09-16T11:26:28</date>
+  <millis>1568625988976</millis>
+  <sequence>0</sequence>
+  <logger>server.FileTransferServer</logger>
+  <level>SEVERE</level>
+  <class>server.FileTransferServer</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Port already in use: 1099; nested exception is: 
+	java.net.BindException: Address already in use: JVM_Bind</message>
+  <exception>
+    <message>java.rmi.server.ExportException: Port already in use: 1099; nested exception is: 
+	java.net.BindException: Address already in use: JVM_Bind</message>
+    <frame>
+      <class>sun.rmi.transport.tcp.TCPTransport</class>
+      <method>listen</method>
+    </frame>
+    <frame>
+      <class>sun.rmi.transport.tcp.TCPTransport</class>
+      <method>exportObject</method>
+    </frame>
+    <frame>
+      <class>sun.rmi.transport.tcp.TCPEndpoint</class>
+      <method>exportObject</method>
+    </frame>
+    <frame>
+      <class>sun.rmi.transport.LiveRef</class>
+      <method>exportObject</method>
+    </frame>
+    <frame>
+      <class>sun.rmi.server.UnicastServerRef</class>
+      <method>exportObject</method>
+    </frame>
+    <frame>
+      <class>sun.rmi.registry.RegistryImpl</class>
+      <method>setup</method>
+    </frame>
+    <frame>
+      <class>sun.rmi.registry.RegistryImpl</class>
+      <method>access$100</method>
+    </frame>
+    <frame>
+      <class>sun.rmi.registry.RegistryImpl$2</class>
+      <method>run</method>
+    </frame>
+    <frame>
+      <class>sun.rmi.registry.RegistryImpl$2</class>
+      <method>run</method>
+    </frame>
+    <frame>
+      <class>java.security.AccessController</class>
+      <method>doPrivileged</method>
+    </frame>
+    <frame>
+      <class>java.security.AccessController</class>
+      <method>doPrivileged</method>
+    </frame>
+    <frame>
+      <class>sun.rmi.registry.RegistryImpl</class>
+      <method>&lt;init&gt;</method>
+    </frame>
+    <frame>
+      <class>java.rmi.registry.LocateRegistry</class>
+      <method>createRegistry</method>
+    </frame>
+    <frame>
+      <class>server.FileTransferServer</class>
+      <method>main</method>
+      <line>85</line>
+    </frame>
+  </exception>
+</record>

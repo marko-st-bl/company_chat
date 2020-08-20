@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-06-11T00:48:12</date>
+  <millis>1560206892463</millis>
+  <sequence>0</sequence>
+  <logger>server.FileTransferServer</logger>
+  <level>CONFIG</level>
+  <class>server.FileTransferServer</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>FileTransferServer is running on port: 1099</message>
+</record>
+</log>

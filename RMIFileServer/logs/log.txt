@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-10-01T14:02:33</date>
+  <millis>1569931353805</millis>
+  <sequence>0</sequence>
+  <logger>server.FileTransferServer</logger>
+  <level>CONFIG</level>
+  <class>server.FileTransferServer</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>FileTransferServer is running on port: 1099</message>
+</record>
+<record>
+  <date>2019-10-01T14:07:06</date>
+  <millis>1569931626739</millis>
+  <sequence>1</sequence>
+  <logger>server.FileTransferServer</logger>
+  <level>CONFIG</level>
+  <class>server.FileTransferServer</class>
+  <method>sendFile</method>
+  <thread>21</thread>
+  <message>File: P1 - Uvod (2018).ppt saved...</message>
+</record>
+<record>
+  <date>2019-10-01T14:07:21</date>
+  <millis>1569931641291</millis>
+  <sequence>2</sequence>
+  <logger>server.FileTransferServer</logger>
+  <level>CONFIG</level>
+  <class>server.FileTransferServer</class>
+  <method>downloadFile</method>
+  <thread>20</thread>
+  <message>File: P1 - Uvod (2018).ppt loaded</message>
+</record>

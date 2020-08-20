@@ -1,0 +1,536 @@
+Elektrotehnicki fakultet 
+Banja Luka 
+Odsjek za racunarstvo i informatiku 
+Smjer – Informacione tehnologije 
+
+Specifikacija softverskih zahtjeva 
+(Software Requirements Specification -SRS) 
+po IEEE standardu 
+za softver „Studentska služba“ 
+
+
+student: Vukovic 
+Dijana 
+broj indeksa: 96/03 
+
+
+Sadržaj 
+
+
+1. Uvod.............................................................................................. 3 
+
+
+1.1. Namjena (Purpose) ................................................................. 3 
+
+
+1.2. Podrucje (Scope)..................................................................... 3 
+
+
+1.3. Definicije, akronimi i skracenice (Definitions, acronyms, and 
+abbreviations)................................................................................. 4 
+
+1.4. Reference (References) .......................................................... 4 
+
+
+1.5. Pregled (Overview).................................................................. 5 
+
+
+2. Opis............................................................................................... 6 
+
+
+2.1. Perspektive proizvoda (Product perspective) .......................... 6 
+
+
+2.2. Funkcije proizvoda (Product functions).................................... 8 
+
+
+2.3. Karakteristike korisnika (User characteristics) ......................... 9 
+
+
+2.4. Ogranicenja (Constraints)........................................................ 9 
+
+
+2.5. Pretpostavke i zavisnosti (Assumptions and dependencies).... 9 
+
+3. Specificni zahtjevi........................................................................ 10 
+
+
+3.1. Zahtjevi vanjskog interfejsa (External interface requirements)10 
+
+3.2. Funkcije (Functions) .............................................................. 11 
+
+
+3.3. Zahtjevi performansi (Performance requirements)................. 13 
+
+
+3.4. Ogranicenja dizajna (Design constraints) .............................. 13 
+
+
+3.5. Softverski sistemski atributi (Software system attributes) ...... 13 
+
+3.6. Ostali zahtjevi (Other requirements) ...................................... 14 
+
+
+2 
+
+
+
+1. Uvod 
+1.1. Namjena (Purpose) 
+Ova SRS opisuje proces kreiranja softverskog proizvoda – aplikacije za rad 
+Studentske službe Elektrotehnickog fakulteta u Banjoj Luci i njegov sadržaj, pa je 
+njena osnovna namjena specifikovanje zahtjeva za softversku aplikaciju sa 
+kojom ce se raditi unutar studentske službe. Namjenjena je naruciocu (kupcu) 
+proizvoda, kako bi se vidjelo da li softver zadovoljava sve njegove zahtjeve, kao i 
+proizvodacu softvera, da vidi na jednom mjestu sve što bi trebao implementirati. 
+Ovaj dokument opisuje ciljeve projekta, parametre, korisnicki interfejs, zahtjeve i 
+pitanja dizajna. 
+
+1.2. Podrucje (Scope) 
+Naziv softverskog proizvoda je “Studentska služba”. Ovaj softver bi trebao da 
+radi sljedece: 
+
+• 
+da omoguci vodenje evidencije studenata po godinama, odsjecima i 
+smjerovima 
+• 
+da omoguci vodenje evidencije predmeta koje studenti slušaju, koji su 
+predmeti obavezni, a koji su izborni, koje predmete student može da 
+izabere (zavisno o odsjeka i smjera), koliko bodova nosi koji predmet i sl. 
+• 
+da omoguci evidenciju ocjena svakog studenta posebno iz pojedinih 
+predmeta, datuma kada je taj ispit položio, kao i broj izlazaka studenta na 
+ispit iz pojedinih predmeta i prosjecnu ocjenu 
+• 
+da omoguci lako dobijanje spiskova studenata po razlicitim kriterijumima 
+• 
+da omoguci studentima da lako dobiju prosjek ocjena, ukoliko im bude 
+potreban za regulisanje stipendije, konkurisanja za smještaj u Studentski 
+dom i sl. 
+Dakle, ovaj softver se treba primjeniti u studentskoj službi, kako bi olakšao rad 
+zaposlenih službenika, kako bi ubrzao rad u studentskoj službi, tako što ce 
+omoguciti brži i lakši pristup podacima o studentima kako bi se oni mogli koristiti, 
+mijenjati, dodavati novi i sl. 
+
+3 
+
+
+
+1.3. Definicije, akronimi i skracenice (Definitions, acronyms, and 
+abbreviations) 
+Definicije: 
+
+• 
+kupac (narucilac) softvera – osoba ili institucija, koja kupuje (narucuje) 
+gotov softver od programera (proizvodaca) ili softver koji je izraden po 
+njegovom zahtjevu; u ovom slucaju je to Elektrotehnicki fakultet Banja 
+Luka, a softver je izraden na zahtjev 
+• 
+proizvodac 
+softvera– osoba koja izraduje (programira) softver; u ovom 
+slucaju to su studenti ETFBL, koji su pravili ovaj softver u okviru 
+laboratorijskih vježbi iz predmeta Informacioni sistemi 
+• 
+korisnik – osoba koja ce koristiti gotov softver; u ovom slucaju postoji više 
+korisnika, a to su službenici zaposleni u studentskoj službi na ETFBL. 
+• 
+Rational Rose – radno okruženje za modelovanje podataka pomocu 
+UML-a 
+• 
+C# – objektno orijentisani programski jezik pogodan za razvoj Windows 
+aplikacija 
+• 
+.NET Framework – radni okvir za programski jezik C# 
+Skracenice: 
+
+• 
+ETFBL – Elektrotehnicki fakultet, Banja Luka 
+• 
+IEEE – The Institute of Electrical and Electronics Engineers 
+• 
+SRS – Software Requirements Specification (specifikacija softevrskih 
+zahtjeva) 
+• 
+SQL – Structured Query Language (strukturirani jezik za upite nad bazom 
+podataka) 
+• 
+C# – objektno orijentisani programski jezik pogodan za razvoj Windows 
+aplikacija 
+• 
+HCI – Human Computer Interaction (interakcija covjek – racunar) 
+• 
+UML – Unified Modeling Language (jedinstveni jezik modelovanja) 
+1.4. Reference (References) 
+• 
+dokumenti P4 SRS 1.ppt i P4 IEEE Std 830 1988.pdf iz materijala sa 
+predavanja 
+• 
+030096_Dijana_Vukovic.mdl – Rational Rose model izraden na 
+laboratorijskim vježbama 
+• 
+Tekstualni model.ppt – prezentacija koja sadrži kratak opis potrebnih 
+karakteristika i funkcija softvera 
+4 
+
+
+
+1.5. Pregled (Overview) 
+Drugo poglavlje sadrži opis perspektive proizvoda, funkcija proizvoda, 
+karakteristika korisnika, ogranicenja, pretpostavki i zavisnosti, tj. sadrži generalne 
+informacije o funkcionalnim zahtjevima i zahtjevima podataka za softver 
+“Studentska služba”, sa detaljnim informacijama o korisnicima i perspektivama 
+proizvoda. Takode sadrži informacije o ogranicenjima, pretpostavkama 
+zavisnosti softvera. 
+
+Trece poglavlje sadrži više tehnickih informacija, koje proizvodaci softvera 
+trebaju, kako bi napravili softver, ukljucujuci i zahtjeve spoljašnjeg interfejsa, 
+zahtjeve funkcionalnosti, zahtjeve performansi i atribute kvaliteta. 
+
+5 
+
+
+
+2. Opis 
+2.1. Perspektive proizvoda (Product perspective) 
+Ovaj softver ce zavisiti od racunovodstva fakulteta, koji Studentskoj službi 
+dostavljaju podatke o tome da li su studenti uplatili npr. cetvrti izlazak na ispit, 
+upis semestra, zdravstveno osiguranje, obnovu godine i sl., kao i od biblioteke 
+fakulteta, jer za neke odredene zahtjeve studenata, kao što je ispis sa fakulteta, 
+biblioteka mora da dostavi u studentsku službu podatak o tome da li je student 
+vratio sve knjige 
+. 
+Kako ovaj softver radi u razlicitim ogranicenjima: 
+
+• 
+system interfaces (sistemski interfejsi) -softver bi trebao da bude 
+napravljen tako da se ne izdvaja iz postojeceg sistemskog softvera i da 
+prati standardne procedure korištenja nekih uobicajnih funkcija u 
+softverskom proizvodu koji su standardne za dati sistemski softver koji 
+koristi studentska služba -Windows operativni sistem. Softver bi trebao da 
+ispunjava neophodne zahtjeve, koje nalaže sam operativni sistem. U 
+samom softveru bi trebalo da budu ugradene precice, koje se uobicajno 
+koriste i koje su lako pamtljive. 
+• 
+user interfaces (korisnicki interfejsi) – 
+1. 
+logicke karakteristike svakog interfejsa izmedu softverskog 
+proizvoda i korisnika: to su konfiguracione karakteristike, npr. 
+softver bi trebao da bude napravljen za format ekrana 1024x768 
+piksela po incu sa prozorima u bojama koje nisu prenapadne (npr. 
+sivoj), i da se prozori otvaraju na sredini ekrana, kako bi se što 
+bolje fokusirala korisnikova pažnja, a, takode, ovaj softverski 
+proizvod bi trebao sadržavati glavni meni, sa menijima: Uredivanje 
+podataka o studentima, Uredivanje podataka o predmetima, 
+Uredivanje podataka o ispitima, Generisanje izvještaja i Pomoc. 
+Svaki od ovih menija bi trebao imati odgovarajuce stavke, npr. 
+Dodavanje novog studenta (predmeta), Brisanje studenta 
+(predmeta), Izmjena podataka o studentu (predmetu), Dodavanje 
+datuma ispita, Izvještaj o prijavljenim studentima na odredeni 
+predmet, Pomoc 
+o korištenju softvera i sl., kao i precice sa 
+tastature za svaki meni i njegovu stavku, tj. za svaku akciju koju 
+korisnik treba da izvrši. 
+2. 
+aspekti optimizovanja interfejsa za osobu koja ga koristi: ovaj 
+softverski proizvod trebao bi imati kratke i razumljive poruke o 
+greškama, pracene kratkim zvucnim signalom, mogucnost undo 
+operacije u slucaju manje greške, graficki interfejs dizajniran tako 
+6 
+
+
+
+da se korisnici lako snalaze, lako uocljive komande i sl. (naravno, 
+sve to što se tice dizajna grafickog interfejsa treba da bude u 
+skladu sa teorijom o HCI). 
+
+• 
+software interfaces (softverski interfejs) – ovaj softver bi trebao da 
+koristi SQL bazu podataka, za cuvanje podataka o studentu i trebao bi biti 
+realizovan u nekom programskom jeziku, koji je pogodan za rad sa ovim 
+bazama podataka, npr. C# (i to verziju Microsoft Visual C# 2005 Express 
+Edition) i raditi na nekoj od novijih verzija Windows operativnog sistema, 
+npr. Windows 2000 ili Windows XP Professional 
+• 
+memory constraints (ogranicenja memorije) – da bi program mogao 
+raditi dovoljno dugo, s obzirom na to da se baza stalno povecava, jer se 
+ne brišu podaci iz nje, potrebno je obezbijediti dovoljnu kolicinu 
+sekundarne memorije 
+• 
+hardware interfaces (hardverski interfejsi) – za pravilan rad ovakvog 
+softverskog proizvoda od hardverskih uredaja potrebani su standardni 
+ulazi i izlazi personalnog racunara: miš, zvucnici, tastatura, i, naravno, 
+printer, kako bi se mogli štampati pojedini izvješaji; pri cemu racunar na 
+kom ce raditi softver ne treba zadovoljavati neke visoke kriterijume, može 
+da bude i Pentium 3 koji radi na 1,2 GHz, sa 256 MB RAM-a i malo vecim 
+hard diskom (npr. 60 GB). 
+• 
+operations (operacije) – zahtjevan je rad sa bazom podataka, kako bi se 
+mogli cuvati podaci o studentima i predmetima, pa su potrebne operacije 
+koje se vrše nad podacima u bazi, kao što su: upisivanje u bazu, 
+ažuriranje podataka i citanje iz baze, kao i neke backup operacije, koje bi 
+štitile od nepredvidenih situacija, kao što su: kvar na hard disku, pokušaj 
+“upada” u bazu i sl. 
+
+7 
+
+
+
+2.2. Funkcije proizvoda (Product functions) 
+Ovaj softverski proizvod bi trebao da ima sledece funkcije: 
+
+• 
+vodenje evidencije studenata po godinama, odsjecima i smjerovima, 
+zajedno sa njihovim licnim podacima, kao što su: broj indeksa, ime, 
+prezime, adresa, broj telefona, datum rodenja... 
+• 
+vodenje evidencije predmeta koje studenti slušaju po godini, koji su 
+predmeti obavezni, a koji su izborni, koje predmete student može da 
+izabere (zavisno o odsjeka i smjera), koliko bodova nosi koji predmet 
+• 
+evidenciju ocjena svakog studenta posebno iz pojedinih predmeta, 
+datuma kada je taj ispit položio, kao i broj izlazaka studenta na ispit iz 
+pojedinih predmeta i prosjecnu ocjenu 
+• 
+generisanje spiskova studenata po razlicitim kriterijumima, npr. spisak 
+studenata koji slušaju predmet Informacioni sistemi i sl. 
+Ilustracija: Dijagram aktivnosti za generisanje spiska studenata po izbornom 
+predmetu, na zahtjev profesora 
+
+Profesor : Profesor StudentskaSluzba : StudentskaSluzba 
+
+Dostavljanje spiska 
+odgovarajucem profesoru 
+Formiranje spiska studenata 
+po izbornom predmetu 
+• 
+generisanje spiska položenih ispita za svakog studenta, sa prosjecnom 
+ocjenom, ukoliko im bude potreban za regulisanje stipendije, konkurisanja 
+za smještaj u Studentski dom i sl. 
+8 
+
+
+
+2.3. Karakteristike korisnika (User characteristics) 
+Ovaj softverski proizvod bi trebao da bude napravljen tako da bude lak za 
+korištenje zaposlenima u studentskoj službi, jer to mogu biti osobe koje slabije 
+koriste racunar i nemaju puno iskustva sa takvim aplikacijama. Naravno, trebao 
+bi biti i realizovan tako da se sve funkcije izvršavaju u što kracem vremenskom 
+periodu, kako bi se zadovoljili i zahtjevi indirektnih korisnika softvera: studenata i 
+profesora. 
+
+2.4. Ogranicenja (Constraints) 
+Potrebno je raditi u skladu sa zakonima o visokom obrazovanju (izgled formulara 
+i sl.), kao i u skladu sa Zakonima o zaštiti autorskih prava. Softver bi trebao i da 
+omoguci paralelno izvršavanje operacija, kako bi više službenika moglo u isto 
+vrijeme da obavlja odredene operacije, ukoliko to bude potrebno. Zatim, potrebno 
+je napraviti odreden vid zaštite u vidu password-a za svakog službenika, kako ne 
+bi neko drugi, osim službenika odgovornih za rad, mogao koristiti ovaj softver i 
+izvršiti nekorektne prepravke podataka o studentima, njihovih ocjena i sl. 
+
+2.5. Pretpostavke i zavisnosti (Assumptions and dependencies) 
+Pretpostavka je da racunar na kom ce se koristiti ovaj program treba imati 
+instaliran Windows operativni sistem i .NET Framework, kako bi aplikacija uopšte 
+mogla da se pokrene, i odgovarajuce drajvere za baze podataka, koje program 
+koristi (Microsoft SQL server 2005). 
+
+9 
+
+
+
+3. Specificni zahtjevi 
+3.1. Zahtjevi vanjskog interfejsa (External interface requirements) 
+Pod zahtjevima vanjskog interfejsa podrazumjevaju se zahtjevi korisnickog 
+interfejsa, hardverskog interfejsa i softverskog interfejsa. 
+
+Kako ce korisnici softvera biti službenici studentske službe, potrebno je da 
+korisnicki interfejs bude prvenstveno razumljiv i lak za korištenje, kao i da po 
+izgledu i nacinu na koji se inicira izvršavanje odredene funkcije, bude veoma 
+slican sistemu koji su korisnici do sada koristili i na koji su navikli, da sve opcije i 
+komande budu iskljucivo na srpskom jeziku, bez upotrebe stranih rijeci i izraza, 
+kako bi se korisnici lakše snalazili i brže izvršavali potrebne zahtjeve. 
+
+Glavni prozor koji se otvara pri pokretanju same aplikacije trebalo bi da sadrži 
+sve ono što je opisano u sekciji 2.1 pod korisnickim interfejsom. Naravno, prije 
+otvaranja glavnog prozora, potrebno je tražiti od korisnika da se prijavi pomocu 
+svog korisnickog imena i lozinke. 
+
+Prozor za unos podataka bi trebalo da ima tekstualna polja sa labelama koje 
+informišu korisnika o tome koji podatak treba u njih da unese, kao i dugme za 
+potvrdu unosa, na ciji ce se”klik” otvarati message box, u kom ce se korisnik 
+pitati da li je siguran da je to ono što želi da uradi. Slicni prozori bi trebali da budu 
+i za sve druge moguce operacije, koje korisnik može da izvrši. 
+
+Pomoc 
+za korištenje softvera trebala bi da sadrži tekstualni opis svih mogucih 
+akcija koje korisnik može izvršiti (kako se koriste, kako se mogu poništiti, koje su 
+precice, i sl). 
+
+Što se tice hardverskog i softverskog interfejsa, oni bi trebali da budu onakvi 
+kakvim su opisani u sekciji 2.1. pod hardverski interfejs i softverski interfejs 
+respektivno. 
+
+10 
+
+
+
+3.2. Funkcije (Functions) 
+Glavni prozor sa menijima: 
+
+Namjena 
+Ulazi 
+Procesiranje 
+Izlaz 
+Prikazuje korisniku koje sve opcije program ima (u vidu menija) i 
+dozvoljava mu da odabere neku od navedenih. 
+Korisnik ce, pomocu stavki menija, moci da izabere da li želi da vrši 
+unos podataka, izmjenu podataka, pregled podataka i sl. Znaci, ulaz ce 
+biti jednostavan klik mišem na onu opciju koju korisnik želi da koristi. 
+Korisnik ce odluciti da li želi da pogleda pomoc 
+o korištenju programa ili 
+da odmah pocne sa radom, i nakon klika na odgovarajucu stavku, 
+otvorice se prozor u kom ce se nalaziti sve ono što odabrana opcija 
+podrazumijeva 
+Prikazan prozor na ekranu za odabranu stavku. 
+
+Prozor za pomoc 
+: 
+
+
+Namjena 
+Ulazi 
+Procesiranje 
+Izlaz 
+Namjena Pomoci je da korisniku omoguci brže i lakše ucenje kako da koristi 
+softver, npr. kako da unese podatke o studentima, kako da vrši njihove 
+izmjene i sl 
+Ulazi u Pomoc 
+ce biti jednostavni navigacijski klikovi korisnika ili unos 
+odredenog pojma koji korisnik želi da pronade u Pomoci, npr. ako korisnik 
+želi da sazna kako da izvrši unos, on ce unijeti pojam “unos” u 
+odgovarajuce polje za pretragu po Pomoci i kliknuti mišem na odgovarajuce 
+dugme “traži”. 
+Procesiranje ce dijelom biti uradeno klikom na odgovarajucu akciju, koju 
+korisnik želi da se izvrši (npr. pretraga, štampanje pomoci i sl.) 
+Izlaz iz Pomoci bice odgovarajuca informacija korisniku o pojmu koji je on 
+tražio ili štampani dokument sa odredenim dijelom Pomoci ili sa svim što se 
+u njoj može naci. 
+
+11 
+
+
+
+Prozor za unos podataka (o studentima, profesorima ili predmetima): 
+
+
+Namjena 
+Ulazi 
+Procesiranja 
+Izlaz 
+Prozor za unos podataka dozvoljava korisniku da unosi podatke o 
+studentima, profesorima ili predmetima, radi evidencije, kako bi se oni 
+poslije mogli koristiti u neke odredene svrhe, npr. pri generisanju raznih 
+spiskova, i sl. 
+Korisnik ce unositi podatke u tekstualna polja, pored kojih ce biti labele, 
+koje ce korisnika informisati o podatku koji se treba unijeti u to polje. 
+Nakon što se podaci unesu i klikne se na dugme za unos, podaci ce biti 
+sacuvani u bazi po unaprijed definisanom formatu, tako da kad korisnik želi 
+da ucita te podatke ili ih izmjeni, može to da uradi. Npr. JMBG mora da ima 
+13 cifara, i ne treba dopustiti korisniku da unese manje cifara, niti da unese 
+slova. 
+Izlaz ce biti poruka na ekranu o korektnom ili nekorektnom unosu podataka, 
+tj. obavještenje da li su podaci uspješno sacuvani u bazu ili ne. 
+
+Prozor za pregled podataka (o studentima, profesorima ili predmetima): 
+
+
+Namjena 
+Ulazi 
+Procesiranja 
+Izlaz 
+Prozor za pregled podataka dozvoljava korisniku da vrši pregled podataka 
+o studentima, profesorima ili predmetima, radi evidencije, kako bi se 
+mogao, npr. pronaci datum kad je student položio neki ispit, koji profesor 
+drži koji predmet, i sl. 
+Korisnik ce moci unijeti podatak(e) u tekstualna polja, pored kojih ce biti 
+labele, koje ce korisnika informisati o podatku koji se treba unijeti u to polje i 
+morace kliknuti na odredeno dugme kako bi dobio željene podatke. 
+Nakon što se unese željeni podatak, na osnovu kojeg treba da se izvrši 
+pretraga baze i generišu tražene informacije i korisnik klikne se na dugme 
+za pretragu, nad bazom ce biti izvršen odgovarajuci upit (npr. SELECT 
+Izborni_predmeti FROM Podaci_o_studentu WHERE Ime=’Marko’ AND 
+Prezime=’Markovic’ ), i podaci ce za najkrace moguce vrijeme biti 
+prezentovani korisniku. 
+Izlaz ce biti novi prozor koji ce se pojaviti na ekranu, na kom ce se nalaziti 
+tabelarni prikaz podataka koje je korisnik zatražio. 
+
+12 
+
+
+
+Napomena: Prozori za izmjenu podataka i generisanje izvještaja imace slicnu 
+funkcionalnost, u zavisnosti od njihove namjene, kao što je opisano za Prozor za 
+unos podataka i Prozor za pregled podataka . 
+
+3.3. Zahtjevi performansi (Performance requirements) 
+Potrebno je napraviti takav softver, koji ce pružiti mogucnost rada više korisnika 
+istovremeno. Zatim, softver bi trebao da izvršava operacije za što krace vrijeme 
+(npr. da se 90% akcija, koje korisnik može poduzeti, izvrši za 2-3 sekunde ili cak 
+manje). 
+
+3.4. Ogranicenja dizajna (Design constraints) 
+Softver bi trebao da bude dizajniran tako da zadovoljava osnovne principe HCI, 
+tj. trebao bi da bude što jednostavnije dizajniran, bez pretjerivanja u bojama, 
+slikama, jer sve treba da bude umjereno, zatim, komande i tekstualna polja i 
+ostalo što ce se nalaziti na prozorima, treba da bude grupisano i poravnato, kako 
+bi korisnik moga lakše da se snade. Takode, softver bi trebao da ima i prozor za 
+prijavu korisnika, na kom bi, pored polja za korisnicko ime i lozinku, trebala da 
+postoji i mala napomena ukoliko je broj znakova za lozinku ogranicen, kao i 
+mogucnost korisnika da promijeni lozinku ili da dobije novu, ukoliko je zaboravio 
+svoju. 
+Formati izvještaja bi trebali da budu onakvi na kakve su korisnici navikli, znaciu 
+gornjem lijevom uglu bi trebao da se nalazi logo fakulteta, naziv, adresa, kontakt 
+telefon i e-mail adresa, ispod toga, najbolje na sredini, trebalo bi da se nalazi 
+naslov izvještaja, pa ispod njega sadržaj, i u donjem lijevom uglu naznaceno 
+mjesto za potpis službenika i mjesto za pecat. 
+
+3.5. Softverski sistemski atributi (Software system attributes) 
+• 
+Softver bi trebao biti proširiv, što znaci da bi u slucaju potrebe za novim 
+funkcijama, dodavanje istih moglo da se izvrši u što kracem roku. 
+• 
+Softver bi trebalo da pruža korisniku korektne informacije, tj. trebao bi da 
+bude pouzdan. 
+• 
+Ukoliko dode do greške, softver bi trebalo da obavijesti korisnika o tome 
+jednostavnim prozorom o grešci, koji ce sadržavati i uputstvo za 
+otklanjanje greške. 
+• 
+Rad sa podacima bi trebao da bude ogranicen samo na korisnike koji 
+imaju dozvolu za to, što znaci da bi trebala da postoji zaštita u vidu 
+pristupa samo sa unaprijed definisanim korisnickim imenom i lozinkom. 
+• 
+Softver bi trebao da bude u potpunosti funkcionalan na Windows 
+operativnom sistemu. 
+13 
+
+
+
+• 
+Softver bi trebao i da sadrži i jedan ReadMe dokument, koji ce sadržavati 
+informacije o minimalnim konfiguracionim zahtjevima, i druge informcije, 
+za koje proizvodac 
+softvera utvrdi da bi mogle biti od koristi. 
+• 
+Sam kod softvera bi trebao da bude dobro dokumentovan, kako bi se 
+omogucile lake izmjene. 
+3.6. Ostali zahtjevi (Other requirements) 
+Kako ispravan rad ovog softvera zavisi dijelom i od racunovodstva fakulteta, koje 
+bi trebalo da dostavlja studentskoj službi odredene informacije, potrebno je da 
+postoji dobra komunikacija izmedu studentske službe i racunovodstva. Potrebno 
+je napraviti softver u skladu sa zakonima o visokom obrazovanju (izgled 
+formulara i sl.), kao i u skladu sa Zakonima o zaštiti autorskih prava. 
+
+14 
+
+
+
